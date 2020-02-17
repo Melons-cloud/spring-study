@@ -18,9 +18,16 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="user" class="com.hemukeji.pojo.User">
         <constructor-arg name="name" value="胡金龙"/>
     </bean>
-    <bean id="userT" class="com.hemukeji.pojo.UserT">
+
+    <!--id bean的唯一标识符
+        class:bean对象所对应的全限定名:包名+类型
+        name:也是别名,可以同时取多个别名,逗号或者空格隔开
+        -->
+
+    <bean id="userT" class="com.hemukeji.pojo.UserT" name="user2">
+<property name="name" value="西安禾木电子科技有限公司"/>
     </bean>
 
-    <alias name="user" alias="askquestion"/>
+
 
 </beans>
