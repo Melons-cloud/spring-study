@@ -19,7 +19,8 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
         <constructor-arg name="name" value="胡金龙"/>
     </bean>
     <bean id="userT" class="com.hemukeji.pojo.UserT">
-
     </bean>
+
+    <alias name="user" alias="askquestion"/>
 
 </beans>
