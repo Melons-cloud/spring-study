@@ -3,31 +3,23 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd">
-
     <!--下标赋值-->
     <!--<bean id="user" class="com.hemukeji.pojo.User">-->
         <!--<constructor-arg index="0" value="胡金龙学Java"/>-->
     <!--</bean>-->
-
     <!--不建议使用,通过类型创建-->
     <!--<bean id="user" class="com.hemukeji.pojo.User">-->
         <!--<constructor-arg type="java.lang.String" value="胡金龙"/>-->
     <!--</bean>-->
-
     <!--直接通过参数名来设置-->
     <bean id="user" class="com.hemukeji.pojo.User">
         <constructor-arg name="name" value="胡金龙"/>
     </bean>
-
     <!--id bean的唯一标识符
         class:bean对象所对应的全限定名:包名+类型
         name:也是别名,可以同时取多个别名,逗号或者空格隔开
         -->
-
     <bean id="userT" class="com.hemukeji.pojo.UserT" name="user2">
-<property name="name" value="西安禾木电子科技有限公司"/>
+        <property name="name" value="西安禾木电子科技有限公司"/>
     </bean>
-
-
-
 </beans>
