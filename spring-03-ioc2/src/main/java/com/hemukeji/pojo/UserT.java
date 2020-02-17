@@ -1,13 +1,13 @@
 package com.hemukeji.pojo;
 
-public class User {
+public class UserT {
 
     private String name;
 
-    public User(String name){
+    public UserT(){
 
 
-      this.name=name;
+        System.out.println("UserT被创建了");
     }
 
     public String getName() {
